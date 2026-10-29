@@ -1,0 +1,131 @@
+{
+  "title": "The Eviction & Housing Court Checklist",
+  "intro": "Facing eviction means facing a legal process with real deadlines and real rights. This is not the time to guess, hope, or go quiet. It’s the time to get organized, document everything, and use every protection the law gives you. We will guide you through this checklist stage by stage, so you know exactly what to do next.",
+  "rights": {
+    "lead": "It is best to know your rights.",
+    "items": [
+      { "label": "Self-help eviction is illegal everywhere.", "text": "A landlord can never change your locks, remove your belongings, or shut off your utilities to force you out. Only a sheriff or marshal, acting on a court order, can remove you." },
+      { "label": "Retaliation is illegal.", "text": "A landlord cannot evict you (or refuse to renew) because you reported a code violation, requested repairs, or joined a tenant association." },
+      { "label": "Discrimination is illegal.", "text": "Eviction can’t be based on race, color, national origin, religion, sex, familial status, or disability. If you suspect discrimination, you can file a complaint with HUD in addition to fighting the case." }
+    ]
+  },
+  "sections": {
+    "notice": {
+      "number": 1,
+      "title": "The Notice",
+      "intro": "A landlord must give you written notice before filing a case. Get this part right and you may be able to stop the case before it starts.",
+      "groups": [
+        { "heading": null, "items": [
+          { "label": "Delivery:", "text": "Save the notice exactly as delivered. Photograph it where it was posted, or the envelope it came in, with the date visible." },
+          { "label": "Type:", "text": "Identify which type of notice it is. It can be {{term:pay_or_quit|Pay-or-Quit}} (nonpayment), {{term:cure_or_quit|Cure-or-Quit}} (lease violation you can fix), or {{term:unconditional_quit|Unconditional Quit}} (no chance to fix). Each has different rules and a different clock." },
+          { "label": "Period:", "text": "Check the notice period against your state’s minimum required days. A notice that’s too short is a defense on its own." }
+        ] }
+      ],
+      "tips": [
+        { "lines": ["Never assume a notice is valid just because it looks official. Wrong dates, wrong amounts, or missing legally required language are common and can get a case dismissed."] }
+      ]
+    },
+    "record": {
+      "number": 2,
+      "title": "The “Houstory” Record",
+      "intro": "Organization is your best defense. Everything below should exist in both a physical folder and a digital backup (email it to yourself or save to cloud storage) so nothing disappears.",
+      "groups": [
+        { "heading": "The Paper Trail", "items": [
+          { "label": "The Lease:", "text": "Have your original signed lease and any renewals handy." },
+          { "label": "Rent Receipts:", "text": "Proof of every rent payment you have made. If you pay cash, you need receipts. If digital, print the bank statements." },
+          { "label": "Communication Log:", "text": "Print every text, email, and letter between you and the landlord regarding the issue. Highlight dates and times. If you had phone calls, write down the approximate dates and what was said." },
+          { "label": "Organized Folder:", "text": "Keep your documents in a single binder or folder. In case of court appearance, divide them into five clearly labeled sections: court pleadings, the lease, financial proof, communications, and property conditions. Keep three identical copies of every printed document ready for the judge, the landlord, and yourself." }
+        ] },
+        { "heading": "Evidence of Conditions (If withholding rent for repairs)", "items": [
+          { "label": "Violation Reports:", "text": "Print out any 311 or HPD (Housing Preservation & Development) violation reports associated with your unit." },
+          { "label": "Photos/Logs:", "text": "Take dated photos of the issue (mold, leaks, pests) with dates. If it’s a heat issue, keep a log of indoor vs. outdoor temperatures. List potential witnesses who can confirm the conditions or a conversation with the landlord." }
+        ] }
+      ],
+      "tips": [
+        { "lines": [
+          "Always communicate with your landlord in writing from this point forward. If a conversation happens by phone or in person, follow up in writing the same day summarizing what was said (“Confirming our call today, you said…”).",
+          "Never destroy or delete old messages. A court may need the full picture."
+        ] }
+      ]
+    },
+    "served": {
+      "number": 3,
+      "title": "Getting Served",
+      "intro": "How you were notified that a case was filed matters legally.",
+      "groups": [
+        { "heading": null, "items": [
+          { "label": "Manner:", "text": "Note how you were served: handed directly, given to another adult in your household, or posted on your door and mailed ({{term:nail_and_mail|“nail and mail”}})." },
+          { "label": "Date:", "text": "Save the date and any paperwork or envelope that came with it." },
+          { "label": "Improper Service:", "text": "If service seems wrong (e.g., wrong address, no follow-up mailing when required, or you never actually received anything), raise this with your attorney or in your Answer. Improper service is a valid defense." }
+        ] }
+      ],
+      "tips": []
+    },
+    "prep": {
+      "number": 4,
+      "title": "Court Preparations",
+      "intro": "Legally answer the landlord’s petition, and secure qualified representation before your day in court.",
+      "groups": [
+        { "heading": "Answer the Petition", "items": [
+          { "label": "Filing and Deadline:", "text": "Do not ignore court papers. You must usually file an {{term:answer|“Answer”}}, or your official written response to the landlord’s eviction lawsuit, by a specific deadline. Only attach individual documents if the court form explicitly asks you to." },
+          { "label": "Legal Defenses:", "text": "State your defense clearly. Common defenses include: improper notice, improper service, rent was paid or the landlord refused to accept it, retaliation, discrimination, or breach of the Warranty of Habitability." },
+          { "label": "Counterclaims:", "text": "Consider counterclaims in the same filing. Unreturned security deposit, repair costs you paid yourself, or damages from a habitability violation can offset or exceed what’s owed." },
+          { "label": "Accommodation and Rights:", "text": "Request the following as early as possible, if necessary:", "subitems": [
+            "Jury trial, if your state allows it",
+            "Free spoken-language interpreter, if English isn’t your first language",
+            "Disability accommodation (more time, a remote hearing, accessible courtroom access)"
+          ] }
+        ] },
+        { "heading": "Seek Legal Counsel", "items": [
+          { "label": "Right to Counsel:", "text": "Look up “right to counsel eviction” for your city. A growing number of cities guarantee free legal representation in housing court." },
+          { "label": "Free Consultations:", "text": "Contact a Legal Aid or tenant-rights organization for free advice clinics or hotlines, regardless of income." },
+          { "label": "Court Mediation:", "text": "Ask the court clerk whether free mediation is offered before trial. It can resolve a case without a judgment on your record." }
+        ] }
+      ],
+      "tips": [
+        { "lines": ["Show up in writing first, then in person. “I’ll just explain it to the judge” is not a substitute for filing an Answer."] },
+        { "lines": ["Find out if you qualify for government aid through available resources or legal aid. You might be eligible for programs like New York City’s “One Shot Deal,” which helps with urgent needs, such as back rent or unpaid utilities."] }
+      ]
+    },
+    "appearance": {
+      "number": 5,
+      "title": "Court Appearance",
+      "intro": "Know what to bring, wear, and say: the standard best practices when representing yourself or appearing in a housing court.",
+      "groups": [
+        { "heading": null, "items": [
+          { "label": "Early Arrival:", "text": "Come at least 30 minutes early as security lines can be long. You may also need to attend a “calendar call” before the session starts." },
+          { "label": "Complete Documents:", "text": "Bring a government-issued photo ID, your original documents, and the three copies of said documents." },
+          { "label": "Appropriate Attire:", "text": "Dress like it matters. You don’t need a suit, but clean, neat clothing signals to the court that you’re taking this seriously." },
+          { "label": "Respectful Communication:", "text": "Avoid directly arguing with the landlord. Take notes on what you disagree with while waiting for the judge to ask you for your side." },
+          { "label": "Clarifications:", "text": "If you don’t understand a question or a legal term, say so and ask for clarification. That’s your right, not a weakness." },
+          { "label": "Postponement Request:", "text": "If you need more time to find an attorney, gather a document, or recover from an emergency, you can ask the judge for a {{term:continuance|continuance}} (postponement) at the very beginning of your hearing." }
+        ] }
+      ],
+      "tips": [
+        { "lines": ["Landlord attorneys frequently approach tenants in the hallway before the trial to negotiate a settlement or “{{term:stipulation|stipulation}}.” Never sign anything in the hallway unless you fully understand it and agree to it."] }
+      ]
+    },
+    "after": {
+      "number": 6,
+      "title": "After the Court Hearing",
+      "intro": "Take these immediate actions the moment the judge rules, whether you win your case, lose the judgment, or sign a settlement agreement.",
+      "groups": [
+        { "heading": "If You Win, or the Case is Dismissed", "items": [
+          { "label": "Written Outcome:", "text": "Get an original or certified true copy of the judge’s decision." },
+          { "label": "Record Sealing or Expungement:", "text": "Ask the court clerk about removing your eviction record from public view or even erasing it altogether. Some states do this automatically, but in many places, you must ask how to start the request." }
+        ] },
+        { "heading": "If You’re Offered a Settlement", "items": [
+          { "label": "Careful Reading:", "text": "Read every line before signing. A {{term:stipulation|stipulation}} is a legally binding contract. If you miss an agreed-upon deadline, you can be evicted without trial." },
+          { "label": "Signed Copy:", "text": "Never leave without a copy signed by both parties and the judge." }
+        ] },
+        { "heading": "If You Lose, or the Judgment is Against You", "items": [
+          { "label": "The “Writ of Possession”:", "text": "It refers to the official, final court order that authorizes law enforcement to physically remove a tenant and return control of the property to the landlord. Ask the court clerk how many days you have before it can be enforced." },
+          { "label": "Physical Eviction:", "text": "Only a sheriff or marshal can physically remove you, never the landlord. They must give you separate advance notice of the move-out date." },
+          { "label": "Storage of Belongings:", "text": "Ask about your state’s requirement for the landlord to store your belongings for a minimum period after move-out, and how to reclaim them." },
+          { "label": "Appeals and Bonds:", "text": "Confirm your appeal deadline immediately. It is often very short (sometimes 5–10 days) and may require {{term:bond|“posting a bond”}}, a financial guarantee paid to the court to pause the eviction while the appeal goes forward." }
+        ] }
+      ],
+      "tips": []
+    }
+  }
+}

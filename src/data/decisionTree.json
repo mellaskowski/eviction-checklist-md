@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "version": "1.0-maryland",
+    "source": "Houstory: Interactive Eviction Screener, Decision Tree Logic & Implementation Map"
+  },
+  "start": "Q1_NOTICE_SELECTION",
+  "nodes": {
+    "Q1_NOTICE_SELECTION": {
+      "type": "question",
+      "text": "What type of notice did you receive from your landlord or property manager?",
+      "help": "Look at the bold header or title at the very top of your document.",
+      "options": [
+        {
+          "label": "Notice of Intent to File a Complaint for Summary Ejectment / Failure to Pay Rent (10-Day Notice)",
+          "next": "Q_FPR_REPAIRS",
+          "set": {
+            "notice_category": "FPR"
+          },
+          "icon": "rent"
+        },
+        {
+          "label": "Notice to Vacate for Breach of Lease (30-Day or 14-Day Notice)",
+          "next": "Q_BOL_CURE",
+          "set": {
+            "notice_category": "BOL"
+          },
+          "icon": "lease"
+        },
+        {
+          "label": "Notice to Vacate / Tenant Holding Over (End of Lease Notice)",
+          "next": "Q_THO_TIMELINE",
+          "set": {
+            "notice_category": "THO"
+          },
+          "icon": "key"
+        },
+        {
+          "label": "I don’t know / I can’t find a title on the paper",
+          "next": "Q_GUIDED_CORE_REASON",
+          "set": {
+            "notice_category": "UNKNOWN"
+          },
+          "icon": "help"
+        }
+      ]
+    },
+    "Q_GUIDED_CORE_REASON": {
+      "type": "question",
+      "text": "What is the primary reason stated for why the landlord is taking action?",
+      "help": "Review the first few sentences or bullet points in the letter.",
+      "options": [
+        {
+          "label": "Money: Past-due rent, late fees, or unpaid utility balances.",
+          "next": "Q_FPR_REPAIRS",
+          "set": {
+            "notice_category": "FPR"
+          }
+        },
+        {
+          "label": "Rules or Behavior: Unauthorized pets, extra occupants, property damage, or noise complaints.",
+          "next": "Q_BOL_CURE",
+          "set": {
+            "notice_category": "BOL"
+          }
+        },
+        {
+          "label": "Lease Expiration: My lease term ended or my landlord wants the property back, but I have not moved out.",
+          "next": "Q_THO_TIMELINE",
+          "set": {
+            "notice_category": "THO"
+          }
+        },
+        {
+          "label": "None of these / The letter is unclear or lists multiple reasons.",
+          "next": "Q_GUIDED_TIMELINE_CLUES"
+        }
+      ]
+    },
+    "Q_GUIDED_TIMELINE_CLUES": {
+      "type": "question",
+      "text": "Does the paperwork mention any of these specific phrases or timeframes?",
+      "help": "Check the deadlines or bold instructions listed in the letter.",
+      "options": [
+        {
+          "label": "It gives me 10 days to pay the balance before a court complaint is filed.",
+          "next": "Q_FPR_REPAIRS",
+          "set": {
+            "notice_category": "FPR"
+          }
+        },
+        {
+          "label": "It gives me 30 days (or 14 days for imminent danger) to leave or fix a lease violation.",
+          "next": "Q_BOL_CURE",
+          "set": {
+            "notice_category": "BOL"
+          }
+        },
+        {
+          "label": "It gives 60 days advance notice that my month-to-month lease will terminate.",
+          "next": "Q_THO_TIMELINE",
+          "set": {
+            "notice_category": "THO"
+          }
+        },
+        {
+          "label": "It has a court seal, a case number, and an assigned court date / time.",
+          "next": "RESULT_COURT_ESCALATION",
+          "set": {
+            "notice_category": "COURT_SUMMONS"
+          }
+        },
+        {
+          "label": "It is signed by a Sheriff or mentions a ‘Writ of Possession’.",
+          "next": "RESULT_WRIT_ALERT",
+          "set": {
+            "notice_category": "WRIT_OF_POSSESSION"
+          }
+        },
+        {
+          "label": "None of the above.",
+          "next": "RESULT_GENERAL_FALLBACK",
+          "set": {
+            "notice_category": "UNIDENTIFIED"
+          }
+        }
+      ]
+    },
+    "Q_FPR_REPAIRS": {
+      "type": "question",
+      "text": "Are you withholding rent because of severe, unaddressed repair issues in your unit?",
+      "help": "Conditions include lack of heat or water, severe leaks, sewage backups, or major pest infestations.",
+      "options": [
+        {
+          "label": "Yes, I reported serious maintenance or health hazards that the landlord failed to fix.",
+          "next": "RESULT_FPR",
+          "set": {
+            "has_habitability_claim": true
+          }
+        },
+        {
+          "label": "No, my notice is strictly related to falling behind on rental payments.",
+          "next": "RESULT_FPR",
+          "set": {
+            "has_habitability_claim": false
+          }
+        }
+      ]
+    },
+    "Q_BOL_CURE": {
+      "type": "question",
+      "text": "Does the notice give you a specific period to correct the issue, or does it tell you to vacate immediately?",
+      "help": "A {{term:cure_period|‘cure’ period}} means an opportunity to fix the violation before eviction is filed.",
+      "options": [
+        {
+          "label": "It provides a deadline to fix (‘cure’) the problem (e.g., removing an unauthorized pet).",
+          "next": "RESULT_BOL",
+          "set": {
+            "cure_allowed": true
+          }
+        },
+        {
+          "label": "It demands that I move out without giving me an opportunity to fix it.",
+          "next": "RESULT_BOL",
+          "set": {
+            "cure_allowed": false
+          }
+        }
+      ]
+    },
+    "Q_THO_TIMELINE": {
+      "type": "question",
+      "text": "Did you receive a written notice to terminate your tenancy at least 60 days before the requested move-out date?",
+      "help": "Under Maryland law, {{term:month_to_month_tenancy|month-to-month tenancies}} generally require at least 60 days’ advance written notice.",
+      "options": [
+        {
+          "label": "Yes, I received 60 or more days of advance written notice.",
+          "next": "RESULT_THO",
+          "set": {
+            "proper_notice": true
+          }
+        },
+        {
+          "label": "No, I received less than 60 days notice (or only verbal notification).",
+          "next": "RESULT_THO",
+          "set": {
+            "proper_notice": false
+          }
+        }
+      ]
+    },
+    "RESULT_FPR": {
+      "type": "result",
+      "title": "Failure to Pay Rent",
+      "summaryItems": [
+        {
+          "label": "Notice Nature:",
+          "text": "This notice is a statutory pre-filing warning required under Maryland Real Property § 8-401. Your landlord is claiming unpaid rent or associated fees."
+        },
+        {
+          "label": "Mandatory 10-Day Window:",
+          "text": "In Maryland, landlords cannot immediately file for eviction in court. They must deliver a written notice granting at least 10 calendar days to pay past-due rent before filing a formal court complaint."
+        },
+        {
+          "label": "Self-Help Prohibition:",
+          "text": "A landlord cannot change your locks, remove your belongings, or shut off heat, water, or electric service to force you out. Only a sheriff executing an active court warrant can conduct a physical eviction."
+        },
+        {
+          "label": "Right to Redeem (“Pay to Stay”):",
+          "text": "Under Maryland law, renters facing non-payment eviction generally hold the legal right to stop an eviction by paying all past-due rent, late fees, and certified court costs to the landlord or court at any time before the sheriff completes the lockout (unless the tenant has received 3 or more judgments for possession within the prior 12 months)."
+        },
+        {
+          "label": "Habitability / Repair Defenses:",
+          "showIf": {
+            "has_habitability_claim": true
+          },
+          "text": "Withholding rent without court authorization puts your housing at risk. Maryland law permits tenants to file an Action for Rent {{term:escrow|Escrow}} in District Court, allowing rent payments to be safely deposited with the court clerk until health and safety violations are remediated."
+        }
+      ],
+      "glossaryIds": [
+        "warranty_of_habitability",
+        "escrow",
+        "default",
+        "grace_period"
+      ],
+      "actionChecklist": [
+        "Photograph the notice and the envelope with the postmark date clearly visible.",
+        "Compile proof of all payments made, including rent receipts, money order stubs, and bank account records.",
+        "If withholding for conditions, log every maintenance request with dated photos, written communications, and inspection reports.",
+        "Apply immediately for emergency rental assistance grants and legal counsel."
+      ],
+      "resources": [
+        {
+          "id": "md_maryland_access_to_counsel",
+          "note": "Connects eligible Maryland renters facing eviction with free legal representation"
+        },
+        {
+          "id": "md_maryland_legal_aid",
+          "note": "Provides free representation and legal advice for income-eligible Maryland tenants facing eviction proceedings"
+        },
+        {
+          "id": "md_eviction_prevention_assistance_economic_action_m",
+          "note": "Assists eligible Baltimore renters in applying for emergency rental aid and navigating payment disputes"
+        },
+        {
+          "id": "md_maryland_courts_self_help_center",
+          "note": "Offers free phone and in-person self-help legal guidance for handling landlord-tenant disputes without an attorney"
+        },
+        {
+          "id": "md_baltimore_water4all",
+          "note": "Financial assistance program helping eligible Baltimore City households lower their municipal water bills"
+        },
+        {
+          "id": "md_energy_stabilization_assistance_program_esap_may",
+          "note": "Mayor’s Office program helping eligible Baltimore City residents resolve past-due energy utility bills"
+        },
+        {
+          "id": "md_annapolis_rental_assistance",
+          "note": "Rental and utility assistance for qualifying Annapolis renters facing arrearages"
+        },
+        {
+          "id": "fed_help_paying_rent",
+          "note": "Federal directory connecting households in crisis to local state rental assistance and voucher programs"
+        }
+      ],
+      "sectionIds": [
+        "notice",
+        "record",
+        "served",
+        "prep",
+        "appearance",
+        "after"
+      ]
+    },
+    "RESULT_BOL": {
+      "type": "result",
+      "title": "Breach of Lease",
+      "summaryItems": [
+        {
+          "label": "Notice Nature:",
+          "text": "Under Maryland Real Property § 8-402.1, this notice asserts that you violated a specific obligation or restrictive rule written into your lease agreement."
+        },
+        {
+          "label": "Notice Timelines:",
+          "text": "Landlords must give at least 30 calendar days’ written notice to vacate prior to filing a court action, unless the breach involves behavior that poses a clear and imminent danger of substantial harm to other tenants, staff, or the property (which permits a shorter 14-day notice)."
+        },
+        {
+          "label": "Substantial Breach Standard:",
+          "text": "A landlord cannot legally evict for trivial or petty disputes; Maryland courts require proof that the lease term was clear, agreed to, and breached substantially."
+        },
+        {
+          "label": "Cure Windows:",
+          "showIf": {
+            "cure_allowed": true
+          },
+          "text": "If your lease or the notice provides a designated {{term:cure_period|cure window}}, remediating the issue (such as removing an unapproved pet or rectifying property clutter) and providing written proof to management can resolve the {{term:default|default}}."
+        }
+      ],
+      "glossaryIds": [
+        "cure_period",
+        "quiet_enjoyment",
+        "addendum",
+        "wear_and_tear"
+      ],
+      "actionChecklist": [
+        "Review your lease contract and all signed {{term:addendum|addenda}} to verify if the cited rule exists in writing.",
+        "If correcting the violation, take dated photographs and deliver written confirmation of the cure to the landlord via certified mail or tracked email.",
+        "Maintain a written log of all landlord communications, noting exact times, dates, and statements made.",
+        "Prepare three copies of all evidence (lease, messages, photos) for your court file."
+      ],
+      "resources": [
+        {
+          "id": "md_maryland_tenant_bill_of_rights_updated_october_2",
+          "note": "Official state summary explaining renter legal protections and procedural rights under Maryland law"
+        },
+        {
+          "id": "md_public_justice_center",
+          "note": "Baltimore-based legal organization advocating for tenant rights and systemic fair housing protections"
+        },
+        {
+          "id": "md_the_people_s_law_library_of_maryland_baltimore_c",
+          "note": "Provides comprehensive explanations of state and county rental laws, lease obligations, and court hearing steps"
+        },
+        {
+          "id": "md_disability_rights_maryland_housing",
+          "note": "Provides legal advocacy for renters with disabilities needing reasonable accommodations, service/support animals, or accessible housing modifications"
+        },
+        {
+          "id": "md_attorney_general_of_maryland_landlord_tenant_dis",
+          "note": "State educational guidance regarding lease requirements, notices, and prohibited retaliation"
+        }
+      ],
+      "sectionIds": [
+        "notice",
+        "record",
+        "served",
+        "prep",
+        "appearance",
+        "after"
+      ]
+    },
+    "RESULT_THO": {
+      "type": "result",
+      "title": "Tenant Holding Over",
+      "summaryItems": [
+        {
+          "label": "Notice Nature:",
+          "text": "Under Maryland Real Property § 8-402, this notice applies when a lease has reached its contractual expiration date, or a periodic tenancy was ended, but the resident remains in possession of the home."
+        },
+        {
+          "label": "60-Day Notice Requirement:",
+          "text": "In Maryland, landlords generally must provide a minimum of 60 days’ written notice to end a {{term:month_to_month_tenancy|month-to-month}} residential tenancy before filing a court action (local jurisdictions such as Montgomery County or Baltimore City may impose additional tenant protections or just-cause requirements)."
+        },
+        {
+          "label": "Notice Defect Defense:",
+          "showIf": {
+            "proper_notice": false
+          },
+          "text": "If your landlord provided less than 60 days’ notice, gave notice only verbally, or accepted rent payments for the period after the expiration date without reserving rights, the eviction case may be dismissed for lack of legal service."
+        },
+        {
+          "label": "Holdover Consequences:",
+          "text": "Remaining in a rental unit past the termination date without landlord consent can expose a tenant to legal liability for holdover damages and court costs."
+        }
+      ],
+      "glossaryIds": [
+        "holdover_tenant",
+        "month_to_month_tenancy",
+        "fixed_term_tenancy",
+        "notice_to_vacate"
+      ],
+      "actionChecklist": [
+        "Calculate the exact calendar days between notice receipt and the stated vacancy date.",
+        "Retrieve your original lease agreement to check auto-renewal and termination clauses.",
+        "Document any rent payments tendered and accepted after the notice expiration date.",
+        "Inquire about city/county relocation or counseling support before the court filing date."
+      ],
+      "resources": [
+        {
+          "id": "md_baltimore_city_department_of_housing_community_d",
+          "note": "Comprehensive guide explaining Baltimore City lease renewal rules, holdover legal standards, and code enforcement"
+        },
+        {
+          "id": "md_pg_one_county_united"
+        },
+        {
+          "id": "md_montgomery_facing_eviction"
+        },
+        {
+          "id": "md_frederick_housing_counseling"
+        },
+        {
+          "id": "md_maryland_courts_self_help_center",
+          "note": "Free legal guidance on preparing court responses and understanding notice validity"
+        }
+      ],
+      "sectionIds": [
+        "notice",
+        "record",
+        "served",
+        "prep",
+        "appearance",
+        "after"
+      ]
+    },
+    "RESULT_COURT_ESCALATION": {
+      "type": "result",
+      "title": "Court summons or Writ of Possession",
+      "summaryItems": [
+        {
+          "label": "Status Alert:",
+          "text": "You have passed the preliminary notice phase and are facing an active District Court lawsuit or an issued eviction warrant."
+        },
+        {
+          "label": "Immediate Action Required:",
+          "text": "If you received a court summons, you must attend your scheduled hearing; failing to appear results in an automatic default judgment."
+        },
+        {
+          "label": "Sheriff Requirement:",
+          "text": "In Maryland, landlords are strictly prohibited from evicting tenants on their own. An eviction can only be performed by the Sheriff’s Office after a judge issues a {{term:writ_of_possession|Writ of Possession}}."
+        }
+      ],
+      "glossaryIds": [],
+      "actionChecklist": [
+        "Write down your court trial date, time, and courtroom number immediately.",
+        "Build your 5-part defense binder: (1) Court pleadings, (2) Lease agreement, (3) Payment receipts, (4) Written communications, and (5) Property condition evidence.",
+        "Request language translation or accessibility accommodations through the court clerk.",
+        "Contact Maryland Legal Aid or the Pro Bono Resource Center for volunteer attorney representation at your hearing."
+      ],
+      "resourceHeading": "Recommended emergency resources",
+      "resources": [
+        {
+          "id": "md_maryland_access_to_counsel",
+          "note": "Statewide portal connecting qualified tenants to free courtroom attorneys"
+        },
+        {
+          "id": "md_pro_bono_resource_center_of_maryland_tenant_volu",
+          "note": "Court-based legal representation clinics assisting tenants directly at district court appearances"
+        },
+        {
+          "id": "md_maryland_legal_aid",
+          "note": "Regional legal clinics offering emergency eviction defense representation"
+        }
+      ],
+      "sectionIds": [
+        "notice",
+        "record",
+        "served",
+        "prep",
+        "appearance",
+        "after"
+      ]
+    },
+    "RESULT_WRIT_ALERT": {
+      "type": "result",
+      "alias": "RESULT_COURT_ESCALATION"
+    },
+    "RESULT_GENERAL_FALLBACK": {
+      "type": "result",
+      "title": "Unidentified notice",
+      "summaryItems": [
+        {
+          "label": "Document Status:",
+          "text": "Your paperwork does not clearly match standard Maryland statutory templates for Failure to Pay Rent, Breach of Lease, or Tenant Holding Over."
+        },
+        {
+          "label": "Potential Nature:",
+          "text": "It may represent an informal management warning, a utility collection demand, an annual lease renewal offer, or a local municipal code inspection notice."
+        },
+        {
+          "label": "Precaution:",
+          "text": "Do not abandon your home or sign new agreements without having the document formally reviewed by a tenant advocate."
+        }
+      ],
+      "glossaryIds": [],
+      "actionChecklist": [
+        "Scan or photograph the entire document including all attached addenda or notices.",
+        "Contact the free Maryland Court Help Center to review the document with legal staff."
+      ],
+      "resources": [
+        {
+          "id": "md_maryland_courts_self_help_center",
+          "note": "Free telephone consultation (410-260-1392) or live chat with court attorneys to clarify official court documents",
+          "phone": "410-260-1392"
+        },
+        {
+          "id": "md_dhcd_tenant_landlord_affairs"
+        },
+        {
+          "id": "md_umbc",
+          "group": "Student support (if enrolled in higher ed)"
+        },
+        {
+          "id": "md_towson",
+          "group": "Student support (if enrolled in higher ed)"
+        },
+        {
+          "id": "md_coppin_habc",
+          "group": "Student support (if enrolled in higher ed)"
+        },
+        {
+          "id": "md_umgc",
+          "group": "Student support (if enrolled in higher ed)"
+        }
+      ],
+      "sectionIds": [
+        "notice",
+        "record",
+        "served",
+        "prep",
+        "appearance",
+        "after"
+      ]
+    }
+  }
+}

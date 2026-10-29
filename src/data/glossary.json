@@ -1,0 +1,86 @@
+{
+  "warranty_of_habitability": {
+    "term": "Warranty of Habitability",
+    "definition": "The basic promise that your apartment must be livable. If there’s no heat, no water, or a rat infestation, the landlord is breaking this promise—even if it’s not written in the lease."
+  },
+  "escrow": {
+    "term": "Escrow",
+    "definition": "A neutral holding account where a third party keeps funds safe until specific requirements are met. It’s the ultimate protection against shady deductions. When your money is in escrow, it forces accountability."
+  },
+  "default": {
+    "term": "Default",
+    "definition": "Failing to fulfill a contractual promise in the lease—such as non-payment or violating building policies—triggering legal remedies or penalties."
+  },
+  "grace_period": {
+    "term": "Grace Period",
+    "definition": "The cushion of extra days (typically 3–5 days) after the due date before a landlord can legally assess a late fee."
+  },
+  "cure_period": {
+    "term": "Cure Period",
+    "definition": "The ‘Fix It’ window. The specific amount of time a landlord or tenant legally has to fix a violation after receiving formal notice."
+  },
+  "quiet_enjoyment": {
+    "term": "Quiet Enjoyment",
+    "definition": "Your right to live in your home without constant landlord interference, unannounced entries, or unreasonable disruption. It means peace, not total silence."
+  },
+  "addendum": {
+    "term": "Addendum",
+    "definition": "An extra legal document attached to the main lease agreement covering specific rules like parking, pets, or lead paint disclosures."
+  },
+  "wear_and_tear": {
+    "term": "Wear and Tear vs. Damage",
+    "definition": "Normal aging (faded paint, slightly worn carpet) is standard wear and tear and cannot be deducted from your deposit. Actual destruction (holes in doors, smashed tiles) is damage you pay for."
+  },
+  "holdover_tenant": {
+    "term": "Holdover Tenant",
+    "definition": "Staying in the unit past your lease end date without an approved renewal. This places you in dangerous legal territory where eviction proceedings can start."
+  },
+  "month_to_month_tenancy": {
+    "term": "Month-to-Month Tenancy",
+    "definition": "A flexible rental agreement with no fixed end date that automatically renews every 30 days until either you or the landlord gives formal notice to end it."
+  },
+  "fixed_term_tenancy": {
+    "term": "Fixed-Term Tenancy",
+    "definition": "A rental contract locked into specific start and end dates (usually 12 months). Rent rates and rules remain frozen until the term expires."
+  },
+  "notice_to_vacate": {
+    "term": "Notice to Vacate",
+    "definition": "A formal, written statement telling the landlord or tenant that the lease will end on a specific date."
+  },
+  "writ_of_possession": {
+    "term": "Writ of Possession",
+    "definition": "The official, final court order that authorizes law enforcement to physically remove a tenant and return control of the property to the landlord."
+  },
+  "pay_or_quit": {
+    "term": "Pay-or-Quit",
+    "definition": "A notice for nonpayment of rent."
+  },
+  "cure_or_quit": {
+    "term": "Cure-or-Quit",
+    "definition": "A notice for a lease violation you can fix."
+  },
+  "unconditional_quit": {
+    "term": "Unconditional Quit",
+    "definition": "A notice that gives you no chance to fix the problem."
+  },
+  "nail_and_mail": {
+    "term": "Nail and mail",
+    "definition": "Being served by papers posted on your door and mailed to you."
+  },
+  "answer": {
+    "term": "Answer",
+    "definition": "Your official written response to the landlord’s eviction lawsuit, usually filed by a specific deadline."
+  },
+  "continuance": {
+    "term": "Continuance",
+    "definition": "A postponement of your hearing."
+  },
+  "stipulation": {
+    "term": "Stipulation",
+    "definition": "A settlement agreement. It is a legally binding contract."
+  },
+  "bond": {
+    "term": "Bond",
+    "definition": "A financial guarantee paid to the court to pause the eviction while an appeal goes forward."
+  }
+}

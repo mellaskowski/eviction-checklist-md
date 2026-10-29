@@ -1,0 +1,488 @@
+{
+  "fed_fair_housing_act_fha": {
+    "name": "Fair Housing Act (FHA)",
+    "category": "Tenant Rights",
+    "subcategory": "Disability and Housing",
+    "region": "Federal",
+    "description": "Prohibits discrimination by direct providers of housing, such as landlords and real estate companies as well as other entities, such as municipalities, banks or other lending institutions and homeowners insurance companies whose discriminatory practices make housing unavailable",
+    "url": "https://www.justice.gov/crt/fair-housing-act-1",
+    "source": "U.S. Department of Justice, Civil Rights Division, Disability Rights Section"
+  },
+  "fed_introduction_to_the_americans_with_disabilities_": {
+    "name": "Introduction to the Americans with Disabilities Act (ADA)",
+    "category": "Tenant Rights",
+    "subcategory": "Disability and Housing",
+    "region": "Federal",
+    "description": "Basic understanding of ADA",
+    "url": "https://www.ada.gov/topics/intro-to-ada/",
+    "source": "U.S. Department of Justice, Civil Rights Division, Disability Rights Section"
+  },
+  "fed_fair_housing_act_vs_ada_understanding_both_laws_": {
+    "name": "Fair Housing Act Vs. ADA: Understanding Both Laws As A Property Owner",
+    "category": "Tenant Rights",
+    "subcategory": "Disability and Housing",
+    "region": "Federal",
+    "description": "Legal distinctions between accessibility and discrimination laws",
+    "url": "https://propertyclaimlaw.com/fair-housing-act-attorneys-fha-vs-ada/",
+    "source": "Mineo Salcedo Law Firm"
+  },
+  "fed_using_consumer_reports_what_landlords_need_to_kn": {
+    "name": "Using Consumer Reports: What Landlords Need to Know",
+    "category": "Tenant Rights",
+    "subcategory": "Consumer Reports",
+    "region": "Federal",
+    "description": "Fair Credit Reporting Act (FCRA) Basics: Consumer Report, Adverse Action, Compliance, Investigative Reports, and other Information",
+    "url": "https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know",
+    "source": "Federal Trade Commission (FTC)"
+  },
+  "fed_tenant_rights": {
+    "name": "Tenant Rights",
+    "category": "Tenant Rights",
+    "subcategory": "Know Your Rights",
+    "region": "Federal",
+    "description": "",
+    "url": "https://www.hud.gov/topics/rental_assistance/tenantrights",
+    "source": "U.S. Department of Housing and Urban Development"
+  },
+  "fed_resources_for_renters": {
+    "name": "Resources for Renters",
+    "category": "Tenant Rights",
+    "subcategory": "Renter Resources",
+    "region": "Federal",
+    "description": "This page is designed to help inform renters about the rights and responsibilities of being a renter in a multifamily community and identifies some external resources they can access should they find themselves in financial distress",
+    "url": "https://www.nmhc.org/housing-help-hub/resources-for-renters/",
+    "source": "National Multifamily Housing Council"
+  },
+  "fed_can_a_landlord_deny_an_emotional_support_animal_": {
+    "name": "Can A Landlord Deny An Emotional Support Animal? Legal Facts",
+    "category": "Tenant Rights",
+    "subcategory": "Assistance Animal",
+    "region": "Federal",
+    "description": "Quick reference on Assistance Animal",
+    "url": "https://1836propertymanagement.com/can-a-landlord-deny-an-emotional-support-animal/",
+    "source": "1836 Property Management"
+  },
+  "fed_sexual_harassment_in_housing_initiative_resource": {
+    "name": "Sexual Harassment in Housing Initiative - Resources",
+    "category": "Tenant Rights",
+    "subcategory": "Sexual Harassment",
+    "region": "Federal",
+    "description": "Resources on DOJ’s work against sexual harassment in housing",
+    "url": "https://www.justice.gov/crt/sexual-harassment-housing-initiative-resources",
+    "source": "U.S. Department of Justice - Civil Rights Division"
+  },
+  "fed_real_estate_disclosures_about_potential_lead_haz": {
+    "name": "Real Estate Disclosures about Potential Lead Hazards",
+    "category": "Tenant Rights",
+    "subcategory": "Lead Disclosures",
+    "region": "Federal",
+    "description": "Information on the Lead-based Paint Disclosure Rule",
+    "url": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+    "source": "United States Environmental Protection Agency"
+  },
+  "fed_landlord_tenant_law_a_beginner_s_guide": {
+    "name": "Landlord-Tenant Law: A Beginner’s Guide",
+    "category": "Tenant Rights",
+    "subcategory": "Landlord-Tenant Law Resources",
+    "region": "Federal",
+    "description": "List of free websites that offer helpful information about landlord-tenant law",
+    "url": "https://guides.loc.gov/landlord-tenant-law/websites",
+    "source": "Law Library of Congress"
+  },
+  "fed_section_8_housing": {
+    "name": "Section 8 Housing",
+    "category": "Financial Assistance",
+    "subcategory": "Housing Voucher",
+    "region": "Federal",
+    "description": "Information on how it works, eligibility, and the application process",
+    "url": "https://www.usa.gov/housing-voucher-section-8",
+    "source": "USAGov"
+  },
+  "fed_subsidized_rental_housing": {
+    "name": "Subsidized Rental Housing",
+    "category": "Financial Assistance",
+    "subcategory": "Subsidized rental housing",
+    "region": "Federal",
+    "description": "Information on eligibility rules and the application process",
+    "url": "https://www.usa.gov/subsidized-rental-housing",
+    "source": "USAGov"
+  },
+  "fed_rental_assistance_for_veterans": {
+    "name": "Rental assistance for veterans",
+    "category": "Financial Assistance",
+    "subcategory": "Rental Assistance for Specific Groups",
+    "region": "Federal",
+    "description": "Information on eligibility rules and the application process",
+    "url": "https://www.usa.gov/rent-help-groups",
+    "source": "USAGov"
+  },
+  "fed_rental_assistance_for_seniors": {
+    "name": "Rental assistance for seniors",
+    "category": "Financial Assistance",
+    "subcategory": "Rental Assistance for Specific Groups",
+    "region": "Federal",
+    "description": "Information on eligibility rules and the application process",
+    "url": "https://www.usa.gov/rent-help-groups",
+    "source": "USAGov"
+  },
+  "fed_public_housing": {
+    "name": "Public Housing",
+    "category": "Financial Assistance",
+    "subcategory": "Public Housing",
+    "region": "Federal",
+    "description": "Information on eligibility rules and the application process",
+    "url": "https://www.usa.gov/public-housing",
+    "source": "USAGov"
+  },
+  "fed_find_emergency_housing": {
+    "name": "Find Emergency Housing",
+    "category": "Financial Assistance",
+    "subcategory": "Emergency Housing Assistance",
+    "region": "Federal",
+    "description": "How to find help immediately if facing or experiencing homelessness. The government offers programs that can help find short-term housing.",
+    "url": "https://www.usa.gov/emergency-housing",
+    "source": "USAGov"
+  },
+  "fed_help_paying_rent": {
+    "name": "Help Paying Rent",
+    "category": "Financial Assistance",
+    "subcategory": "Emergency Housing Assistance",
+    "region": "Federal",
+    "description": "How to contact state to find emergency help paying rent",
+    "url": "https://www.usa.gov/emergency-pay-rent",
+    "source": "USAGov"
+  },
+  "fed_sexual_harassment_in_housing_initiative": {
+    "name": "Sexual Harassment in Housing Initiative",
+    "category": "Legal Aid",
+    "subcategory": "Sexual Harassment",
+    "region": "Federal",
+    "description": "Addresses sexual harassment by landlords, property managers, maintenance workers, loan officers or other people who have control over housing",
+    "url": "https://www.justice.gov/crt/sexual-harassment-housing-initiative-about-us",
+    "source": "U.S. Department of Justice, Civil Rights Division"
+  },
+  "fed_legal_services_corporation_lsc": {
+    "name": "Legal Services Corporation (LSC)",
+    "category": "Legal Aid",
+    "subcategory": "Free Legal Clinic",
+    "region": "Federal",
+    "description": "An independent nonprofit established by Congress in 1974 to provide financial support for civil legal aid to low-income Americans.",
+    "url": "https://www.lsc.gov/about-lsc/what-legal-aid/i-need-legal-help",
+    "source": "Legal Services Corporation (LSC)"
+  },
+  "fed_directory_of_law_school_pro_bono_programs": {
+    "name": "Directory of law school pro bono programs",
+    "category": "Legal Aid",
+    "subcategory": "Free Legal Clinic",
+    "region": "Federal",
+    "description": "Finds a law school pro bono program in your state.",
+    "url": "https://www.americanbar.org/groups/center-pro-bono/resources/directory_of_law_school_public_interest_pro_bono_programs/",
+    "source": "American Bar Association"
+  },
+  "fed_american_bar_association_free_legal_answers": {
+    "name": "American Bar Association Free Legal Answers",
+    "category": "Legal Aid",
+    "subcategory": "Virtual Free Legal Clinic",
+    "region": "Federal",
+    "description": "This site lets people with low incomes ask questions online and have a lawyer answer them. They will not answer questions involving crimes.",
+    "url": "https://abafreelegalanswers.org",
+    "source": "Operated by the American Bar Association (ABA) Standing Committee on Pro Bono and Public Service, in partnership with state-level administrator entities and participating volunteer attorney"
+  },
+  "fed_law_help_interactive": {
+    "name": "Law Help Interactive",
+    "category": "Legal Aid",
+    "subcategory": "Free Legal Assistance",
+    "region": "Federal",
+    "description": "A program that help fill out legal forms for free",
+    "url": "https://lawhelpinteractive.org",
+    "source": "Project of Scale Justice, in cooperation with Ohio State Legal Services Association, funded by the Legal Services Corporation; and state courts in California and New York."
+  },
+  "fed_housing_real_estate_resources_for_veterans": {
+    "name": "Housing & Real Estate Resources for Veterans",
+    "category": "Legal Aid",
+    "subcategory": "Free Legal Assistance",
+    "region": "Federal",
+    "description": "Self-help resources for veterans on topics related to Housing & Real Estate",
+    "url": "https://www.statesidelegal.org/self-help/4672",
+    "source": "StateSideLegal"
+  },
+  "fed_listing_of_pro_bono_legal_clinics_for_veterans": {
+    "name": "Listing of Pro-Bono Legal Clinics for Veterans",
+    "category": "Legal Aid",
+    "subcategory": "Free Legal Assistance",
+    "region": "Federal",
+    "description": "Specific information on Medical Legal Partnerships and VA-Affiliated Legal Clinics",
+    "url": "https://www.va.gov/HOMELESS/lsv/MLP_LC_List.pdf",
+    "source": "US Department of Veteran Affairs"
+  },
+  "md_baltimore_renters_united": {
+    "name": "Baltimore Renters United",
+    "category": "Tenant Rights",
+    "subcategory": "Renter Transparency Organization",
+    "region": "Maryland",
+    "description": "",
+    "url": "https://www.baltimorerentersunited.org/who-is-bru"
+  },
+  "md_baltimore_city_department_of_housing_community_d": {
+    "name": "Baltimore City Department of Housing & Community Development Tenant’s Rights Guidebook",
+    "category": "Tenant Rights",
+    "subcategory": "Guidebook",
+    "region": "Maryland",
+    "description": "Handbook for rental residents in Baltimore City",
+    "url": "https://s3.amazonaws.com/baltimorecity.gov.if-us-east-1/s3fs-public/2026-05/tenants_rights_guidebook_05-28-2026_update.pdf"
+  },
+  "md_maryland_tenant_bill_of_rights_updated_october_2": {
+    "name": "Maryland Tenant Bill of Rights (updated October 2025)",
+    "category": "Tenant Rights",
+    "subcategory": "Laws",
+    "region": "Maryland",
+    "description": "Summarizes key renter rights and protections established by federal and state laws; Available in different languages",
+    "url": "https://dhcd.maryland.gov/housing/renter-landlord-resources/tenants-bill-rights"
+  },
+  "md_maryland_tenant_bill_of_rights": {
+    "name": "Maryland Tenant Bill of Rights",
+    "category": "Tenant Rights",
+    "subcategory": "Laws",
+    "region": "Maryland",
+    "description": "It summarizes a majority the rights you have as a tenant",
+    "url": "https://www.baltimorerentersunited.org/new-page"
+  },
+  "md_baltimore_renters_united_know_your_rights": {
+    "name": "Baltimore Renters United - Know Your Rights",
+    "category": "Tenant Rights",
+    "subcategory": "Know Your Rights",
+    "region": "Maryland",
+    "description": "Materials that educate you on your rights as a renter.",
+    "url": "https://www.baltimorerentersunited.org/know-your-rights"
+  },
+  "md_maryland_inclusive_housing_tenant_based_rent_sub": {
+    "name": "Maryland Inclusive Housing - Tenant-based rent subsidy programs",
+    "category": "Tenant Rights",
+    "subcategory": "Disability - Know your rights",
+    "region": "Maryland",
+    "description": "Tools that educate you on your rights and help you find housing.",
+    "url": "https://mih-inc.org/housing-info/tenant-based-assistance-programs/"
+  },
+  "md_disability_rights_maryland_housing": {
+    "name": "Disability Rights Maryland - Housing",
+    "category": "Tenant Rights",
+    "subcategory": "Disability",
+    "region": "Maryland",
+    "description": "Offers services to help disabled individuals access and remain in public or subsidized housing, along with the necessary accommodations",
+    "url": "https://disabilityrightsmd.org/housing-2/"
+  },
+  "md_the_people_s_law_library_of_maryland_baltimore_c": {
+    "name": "The People’s Law Library of Maryland - Baltimore City Rental and Housing Laws",
+    "category": "Tenant Rights",
+    "subcategory": "Know Your Rights",
+    "region": "Maryland",
+    "description": "List of Baltimore City Rental and Housing laws and descriptions",
+    "url": "https://www.peoples-law.org/baltimore-city-rental-and-housing-laws"
+  },
+  "md_attorney_general_of_maryland_landlord_tenant_dis": {
+    "name": "Attorney General of Maryland - Landlord/Tenant Disputes",
+    "category": "Tenant Rights",
+    "subcategory": "Know Your Rights",
+    "region": "Maryland",
+    "description": "Overview of common landlord/tenant disputes",
+    "url": "https://oag.maryland.gov/i-need-to/Pages/landlord-tenant-disputes.aspx"
+  },
+  "md_right_of_first_refusal": {
+    "name": "Right of First Refusal",
+    "category": "Tenant Rights",
+    "subcategory": "Know Your Rights",
+    "region": "Maryland",
+    "description": "Short information for landlords and tenants on the Right of First Refusal",
+    "url": "https://dhcd.maryland.gov/housing/renter-landlord-resources/right-first-refusal"
+  },
+  "md_energy_stabilization_assistance_program_esap_may": {
+    "name": "Energy Stabilization Assistance Program (ESAP) - Mayor’s Office of Children & Family Success",
+    "category": "Financial Assistance",
+    "subcategory": "Paying energy bills",
+    "region": "Maryland",
+    "description": "The Energy Stabilization Assistance Program (ESAP) helps Baltimore City residents who are still struggling to pay their energy bills, even after receiving OHEP assistance. If you’ve already gotten help through OHEP but are still at risk of having your utilities turned off, ESAP may be able to help. ESAP is not a replacement for OHEP. It’s an additional support for residents who still need help after receiving OHEP benefits.",
+    "url": "https://www.bmorechildren.com/esapbaltimore"
+  },
+  "md_bccap_security_deposit_assistance_program_mayor_": {
+    "name": "BCCAP Security Deposit Assistance Program - Mayor’s Office of Children & Family Success",
+    "category": "Financial Assistance",
+    "subcategory": "Paying your security deposit",
+    "region": "Maryland",
+    "description": "",
+    "url": "https://www.bmorechildren.com/securitydeposit"
+  },
+  "md_baltimore_young_families_success_fund_mayor_s_of": {
+    "name": "Baltimore Young Families Success Fund - Mayor’s Office of Children & Family Success",
+    "category": "Financial Assistance",
+    "subcategory": "Children & family services",
+    "region": "Maryland",
+    "description": "The Baltimore Young Families Success Fund (BYFSF) is a guaranteed income pilot project launched by Mayor Brandon M. Scott to provide 200 young parents, between 18-24 years old, with an unconditional cash payment of $1,000 per month over the course of 24 months.",
+    "url": "https://www.bmorechildren.com/guaranteed-income",
+    "source": "Mayor’s Office of Children & Family Success"
+  },
+  "md_department_of_social_services": {
+    "name": "Department of Social Services",
+    "category": "Financial Assistance",
+    "subcategory": "Various services including financial",
+    "region": "Maryland",
+    "description": "Offers a variety of services including health & disability, housing & energy assistance, and food & cash assistance.",
+    "url": "https://benefits.maryland.gov/home/#/"
+  },
+  "md_baltimore_safe_haven": {
+    "name": "Baltimore Safe Haven",
+    "category": "Financial Assistance",
+    "subcategory": "LGBTQ+",
+    "region": "Maryland",
+    "description": "One of its many services is Workforce & Legal navigation which includes employment readiness & job placement support, workforce training & agency referrals, financial literacy & bank account access, legal aid navigation & Know Your Rights resources, ID & document replacement assistance, and benefits enrollment (SNAP, Medicaid, SSI)",
+    "url": "https://www.baltimoresafehaven.org/all-services"
+  },
+  "md_eviction_prevention_assistance_economic_action_m": {
+    "name": "Eviction Prevention Assistance - Economic Action MD Fund",
+    "category": "Legal Aid",
+    "subcategory": "Legal Representation",
+    "region": "Maryland",
+    "description": "Aids Baltimore residents at risk of eviction.",
+    "url": "https://econaction.org/tenant-advocacy-and-renters-rights/eviction-prevention-assistance-for-baltimore-renters/"
+  },
+  "md_maryland_legal_aid": {
+    "name": "Maryland Legal Aid",
+    "category": "Legal Aid",
+    "subcategory": "Legal Representation",
+    "region": "Maryland",
+    "description": "advice and representation - focused on subsidized housing cases; same day representation for failure to pay rent eviction cases possible",
+    "url": "https://www.mdlab.org/",
+    "source": "City of Baltimore"
+  },
+  "md_public_justice_center": {
+    "name": "Public Justice Center",
+    "category": "Legal Aid",
+    "subcategory": "Legal Representation",
+    "region": "Maryland",
+    "description": "advice and representation - focused on non-subsidized housing cases",
+    "url": "https://www.publicjustice.org/en/",
+    "source": "City of Baltimore"
+  },
+  "md_pro_bono_resource_center_of_maryland_tenant_volu": {
+    "name": "Pro Bono Resource Center of Maryland /Tenant Volunteer Lawyer of the Day Program",
+    "category": "Legal Aid",
+    "subcategory": "Free legal aid",
+    "region": "Maryland",
+    "description": "advice and same-day representation in rent court - will meet tenant at court",
+    "url": "https://probonomd.org/",
+    "source": "City of Baltimore"
+  },
+  "md_disability_rights_maryland": {
+    "name": "Disability Rights Maryland",
+    "category": "Legal Aid",
+    "subcategory": "Legal Representation",
+    "region": "Maryland",
+    "description": "housing cases involving a tenant or family member with a disability",
+    "url": "https://disabilityrightsmd.org/",
+    "source": "City of Baltimore"
+  },
+  "md_maryland_courts_self_help_center": {
+    "name": "Maryland Courts Self-Help Center",
+    "category": "Legal Aid",
+    "subcategory": "Legal Self-help",
+    "region": "Maryland",
+    "description": "advice and referrals on housing and other civil cases",
+    "url": "https://www.mdcourts.gov/helpcenter",
+    "source": "City of Baltimore"
+  },
+  "md_the_maryland_coalition_against_sexual_assault_mc": {
+    "name": "The Maryland Coalition Against Sexual Assault (MCASA) - Sexual Assault Legal Institute (SALI)",
+    "category": "Legal Aid",
+    "subcategory": "Legal Services",
+    "region": "Maryland",
+    "description": "Provides direct legal services, advocacy, and guidance for sexual violence survivors facing housing instability or landlord-related exploitation.",
+    "url": "https://mcasa.org/survivors/sali"
+  },
+  "md_maryland_access_to_counsel": {
+    "name": "Maryland Access to Counsel in Evictions",
+    "category": "Legal Aid",
+    "subcategory": "Legal Representation",
+    "region": "Maryland",
+    "description": "Connects eligible Maryland renters facing eviction with free legal representation",
+    "url": "https://legalhelpmd.org"
+  },
+  "md_baltimore_water4all": {
+    "name": "Baltimore City Water4All",
+    "category": "Financial Assistance",
+    "subcategory": "Paying water bills",
+    "region": "Maryland",
+    "description": "Financial assistance program helping eligible Baltimore City households lower their municipal water bills",
+    "url": "https://cityservices.baltimorecity.gov/water4all/"
+  },
+  "md_annapolis_rental_assistance": {
+    "name": "Annapolis Rental Assistance Program",
+    "category": "Financial Assistance",
+    "subcategory": "Rental assistance",
+    "region": "Maryland",
+    "description": "Rental and utility assistance for qualifying Annapolis renters facing arrearages",
+    "url": "https://www.annapolis.gov/2402/Rental-Operations-and-Pr"
+  },
+  "md_pg_one_county_united": {
+    "name": "Prince George’s One County United & Court Resource Guide",
+    "category": "Tenant Rights",
+    "subcategory": "County resources",
+    "region": "Maryland",
+    "description": "County housing portal providing legal aid contacts and tenant rights documentation",
+    "url": "https://princegeorgescourts.org/DocumentCenter/View/25"
+  },
+  "md_montgomery_facing_eviction": {
+    "name": "Montgomery County Facing Eviction Resources",
+    "category": "Tenant Rights",
+    "subcategory": "County resources",
+    "region": "Maryland",
+    "description": "Programs and tenant counseling resources specifically for Montgomery County renters facing tenancy terminations",
+    "url": "https://www.montgomerycountymd.gov/department-hosun"
+  },
+  "md_frederick_housing_counseling": {
+    "name": "City of Frederick Housing Counseling Office",
+    "category": "Tenant Rights",
+    "subcategory": "Housing counseling",
+    "region": "Maryland",
+    "description": "Free lease and tenant rights counseling for Frederick residents navigating tenancy transitions",
+    "url": "https://hhs.cityoffrederickmd.gov/129/Housing-Counseling"
+  },
+  "md_dhcd_tenant_landlord_affairs": {
+    "name": "Office of Tenant and Landlord Affairs (DHCD)",
+    "category": "Tenant Rights",
+    "subcategory": "State agency",
+    "region": "Maryland",
+    "description": "Statewide agency assisting Maryland renters with lease interpretations and landlord-tenant standards",
+    "url": "https://dhcd.maryland.gov/housing/renter-landlord-resources"
+  },
+  "md_umbc": {
+    "name": "UMBC Retriever Support Services & Off-Campus Housing",
+    "category": "Student Support",
+    "subcategory": "Higher education",
+    "region": "Maryland",
+    "description": "Housing guidance and legal referrals for university students",
+    "url": "https://retrieversupport.umbc.edu/off-campus-housing/"
+  },
+  "md_towson": {
+    "name": "Towson Off-Campus Housing Portal",
+    "category": "Student Support",
+    "subcategory": "Higher education",
+    "region": "Maryland",
+    "description": "Off-campus tenancy resources and Dean of Students assistance",
+    "url": "https://offcampushousing.towson.edu/"
+  },
+  "md_coppin_habc": {
+    "name": "Coppin State & HABC Off-Campus Housing Support",
+    "category": "Student Support",
+    "subcategory": "Higher education",
+    "region": "Maryland",
+    "description": "Housing voucher and tenant rights resources for students",
+    "url": "https://www.coppin.edu/off-campus-housing-options"
+  },
+  "md_umgc": {
+    "name": "UMGC Student Wellness Resources",
+    "category": "Student Support",
+    "subcategory": "Higher education",
+    "region": "Maryland",
+    "description": "Community assistance and housing instability support for working students",
+    "url": "https://www.umgc.edu/current-students/student-life-and-support/wellness-resources"
+  }
+}
