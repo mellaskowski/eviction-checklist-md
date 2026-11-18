@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 8080
 
 # Command to start your application
-CMD [ "vite" ]
+CMD [ "npm run dev" ]
